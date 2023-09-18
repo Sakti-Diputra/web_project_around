@@ -1,0 +1,133 @@
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.profile__image {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    background-image: url(../images/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile__info {
+    margin-left: 30px;
+}
+
+.profile__name {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.profile__job {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.profile__edit-button {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background-image: url(../images/Edit_Button.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 18px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.profile__edit-button:hover {
+    opacity: 50%;
+}
+
+.profile__add-button {
+    width: 150px;
+    min-width: 150px;
+    height: 50px;
+    background-image: url(../images/Add_Button.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 165px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.profile__add-button:hover {
+    opacity: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .profile {
+        display: grid;
+        grid-template-areas: 
+        'image image'
+        'info edit'
+        'add add';
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .profile__image {
+        margin: 0 auto 30px;
+        grid-area: image;
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
+        background-image: url(../images/profile.jpg);
+        border-radius: 50%;
+    }
+    
+    .profile__info {
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 200px;
+        margin-left: 48px;
+    }
+    
+    .profile__name {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .profile__job {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 14px;
+        margin-left: 30px;
+    }
+    
+    .profile__edit-button {
+        grid-area: edit;
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        background-image: url(../images/Edit_Button.png);
+        background-size: cover;
+        background-position: center;
+        margin-left: 10px;
+        margin-bottom: 36px;
+        margin-right: 48px;
+    }
+
+    
+    
+    .profile__add-button {
+        grid-area: add;
+        width: 282px;
+        background-image: url(../images/Add_Button_mobile.png);
+        margin: 36px auto 0;
+    }
+
+    
+}

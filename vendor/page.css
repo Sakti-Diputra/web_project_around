@@ -1,0 +1,11 @@
+body {
+    background: #000000;
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Inter';
+}
+
+h1,h2,p {
+    color: #fff;
+    margin: 0;
+}

@@ -4,24 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Di Sekitar Amerika Serikat</title>
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
     <header class="header">
-
+        <img class="header__logo" src="./images/Header.png" alt="Header logo">
     </header>
 
     <main class="content">
-        <div class="profil">
-
+        <div class="profile">
+            <div class="profile__image"></div>
+            <div class="profile__info">
+                <h1 class="profile__name">Jacques Cousteau</h1>
+                <p class="profile__job">Penjelajah</p>
+            </div>
+            <button class="profile__edit-button"></button>
+            <button class="profile__add-button"></button>
         </div>
 
-        <div class="elements">
+        <section class="popup">
+            <div class="popup__container">
+                <button type="button" class="popup__close-button"></button>
+                <h3 class="popup__title">Edit Profil</h3>
+                <form class="popup__form" name="new">
+                    <input type="text" class="popup__input popup__input_type_name" placeholder="Name">
+                    <input type="text" class="popup__input popup__input_type_about-me" placeholder="About Me">
+                    <button type="submit" class="popup__submit-button">Simpan</button>
+                </form>
+            </div>
+        </section>
 
+        <div class="elements">
+            <div class="card">
+                <img class="card__image" src="./images/lembah_yosemite.jpg" alt="lembah yosemite">
+                <div class="card__element">   
+                    <p class="card__title">Lembah Yosemite</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./images/danau_louise.jpg" alt="Danau Louise">
+                <div class="card__element">   
+                    <p class="card__title">Danau Louise</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./images/pegunungan_gundul.jpg" alt="Pegunungan Gundul">
+                <div class="card__element">   
+                    <p class="card__title">Pegunungan Gundul</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./images/latemar.jpg" alt="Latemar">
+                <div class="card__element">   
+                    <p class="card__title">Latemar</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./images/vanoise_national_park.jpg" alt="Vanoise National Park">
+                <div class="card__element">   
+                    <p class="card__title">Vanoise National Park</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./images/lago_braies.jpg" alt="Lago di Braies">
+                <div class="card__element">   
+                    <p class="card__title">Lago di Braies</p>
+                    <button class="card__like-button"></button>
+                </div>
+            </div>
+            
         </div>
     </main>
 
     <footer class="footer">
-
+        <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
     </footer>
 </body>
 </html>
