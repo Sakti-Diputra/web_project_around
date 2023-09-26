@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Di Sekitar Amerika Serikat</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="page">
     <header class="header">
         <img class="header__logo" src="./images/Header.png" alt="Header logo">
     </header>
-
+ 
     <main class="content">
-        <div class="profile">
+        <section class="profile">
             <div class="profile__image"></div>
             <div class="profile__info">
                 <h1 class="profile__name">Jacques Cousteau</h1>
-                <p class="profile__job">Penjelajah</p>
+                <button class="profile__edit-button"></button>
+                <p class="profile__about">Penjelajah</p>
             </div>
-            <button class="profile__edit-button"></button>
             <button class="profile__add-button"></button>
-        </div>
-
-        <section class="popup">
-            <div class="popup__container">
-                <button type="button" class="popup__close-button"></button>
-                <h3 class="popup__title">Edit Profil</h3>
-                <form class="popup__form" name="new">
-                    <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Name">
-                    <input type="text" name="about-me" class="popup__input popup__input_type_about-me" placeholder="About Me">
-                    <button type="submit" class="popup__submit-button">Simpan</button>
-                </form>
-            </div>
         </section>
 
-        <div class="elements">
+        <section class="popup">
+            <form action="#" class="popup__container">
+                <h2 class="popup__title">Edit Profil</h2>
+                <input 
+                    type="text" 
+                    class="popup__input popup__input_name" 
+                    placeholder="Name">
+                <input 
+                    type="text" 
+                    class="popup__input popup__input_about-me" 
+                    placeholder="About Me">
+                <button type="submit" class="popup__submit-button">Simpan</button>
+                <button type="button" class="popup__close-button"></button>
+            </form> 
+        </section>
+
+        <section class="elements">
             <div class="card">
                 <img class="card__image" src="./images/lembah_yosemite.jpg" alt="lembah yosemite">
                 <div class="card__element">   
@@ -82,12 +88,13 @@
                     <button class="card__like-button"></button>
                 </div>
             </div>
-            
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
         <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

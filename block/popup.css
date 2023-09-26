@@ -1,6 +1,16 @@
 .popup {
-    display: flex;
-    justify-content: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup_opened {
+    display: block;
 }
 
 .popup__container {
@@ -8,7 +18,10 @@
     height: 330px;
     background-color: #ffffff;
     border-radius: 10px;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .popup__close-button {
@@ -16,16 +29,15 @@
     background-color: transparent;
     padding: 0;
     width: 40px;
-    min-width: 40px;
     height: 40px;
     border: none;
     cursor: pointer;
     position: absolute;
     background-size: cover;
     background-position: center;
-    top: -40px; /* Margin negatif untuk menggeser tombol Tutup ke luar */
-    right: -40px; /* Margin negatif untuk menggeser tombol Tutup ke luar */
-    transition: color 0.3s; /* Efek perubahan warna saat hover */
+    top: -40px; 
+    right: -40px; 
+    transition: color 0.3s; 
 }
 
 .popup__close-button:hover {
@@ -33,6 +45,7 @@
 }
 
 .popup__title{
+    color: #000000;
     font-size: 24px;
     font-weight: 900;
     margin: 34px 36px 54px;
@@ -46,24 +59,32 @@
 
 input {
     border: none;
+    margin: 0 36px;
 }
 
 .popup__input {
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #d4d4d4;
     width: 358px;
+    height: 27px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.94px;
+    
+    
 }
 
-.popup__input_type_name {
+.popup__input_name {
     margin-bottom: 29.74px;
+}
+
+.placeholder {
+    color: #000;
 }
 
 .popup__submit-button {
     background-color: #000000;
     color: #ffffff;
-    margin-top: 48px;
+    margin: 48px 36px 0;
     width: 358px;
     height: 50.15px;
     border: none;
@@ -74,5 +95,36 @@ input {
     opacity: 80%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup__container {
+        width: 282px;
+        height: 322px;
+        top: 60%;
+    }
 
+    .popup__close-button {
+        width: 26px;
+        height: 26px;
+        right: 0;
+    }
 
+    .popup__title{
+        font-size: 18px;
+        margin: 25px 22px 76px;
+    }
+
+    .popup__input {
+        width: 238px; 
+        margin: 0 22px; 
+    }
+
+    .popup__input_name {
+        margin-bottom: 30px;
+    }
+
+    .popup__submit-button {
+        width: 238px;
+        height: 46px;
+        margin: 46px 22px 0;
+    }
+}
