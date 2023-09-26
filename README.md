@@ -19,4 +19,4 @@ Anda dapat mengakses halaman profil ini dengan membuka file 'index.html' dalam p
 - Menutup popup pengeditan profil dengan mengklik tombol "Tutup"
 
 **Tautan Ke GitHub Pages Saya**
-https://sakti-diputra.github.io/web_project_homeland/
+https://sakti-diputra.github.io/web_project_around/
