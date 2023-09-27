@@ -6,7 +6,7 @@ const aboutMeProfileElement = document.querySelector('.profile__about');
 const inputName = document.querySelector('.popup__input_name');
 const inputAboutMe = document.querySelector('.popup__input_about-me');
 const closeButton = document.querySelector('.popup__close-button');
-const editProfileForm = document.querySelector('form[name="edit-profile-form"]');
+const editProfileForm = document.querySelector('.popup__container');
 
 // Fungsi untuk mengisi nilai input dari tampilan profil
 function isiInputDariProfil() {
