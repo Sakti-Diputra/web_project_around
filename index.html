@@ -25,53 +25,15 @@
         </section>
 
         <section class="elements">
+            <template class="template__card">
             <div class="card">
-                <img class="card__image" src="./images/lembah_yosemite.jpg" alt="lembah yosemite">
+                <img class="card__image">
                 <div class="card__element">   
-                    <h2 class="card__title">Lembah Yosemite</h2>
+                    <h2 class="card__title"></h2>
                     <button type="button" class="card__like-button"></button>
                 </div>
             </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/danau_louise.jpg" alt="Danau Louise">
-                <div class="card__element">   
-                    <h2 class="card__title">Danau Louise</h2>
-                    <button type="button" class="card__like-button"></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/pegunungan_gundul.jpg" alt="Pegunungan Gundul">
-                <div class="card__element">   
-                    <h2 class="card__title">Pegunungan Gundul</h2>
-                    <button type="button" class="card__like-button"></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/latemar.jpg" alt="Latemar">
-                <div class="card__element">   
-                    <h2 class="card__title">Latemar</h2>
-                    <button type="button" class="card__like-button"></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/vanoise_national_park.jpg" alt="Vanoise National Park">
-                <div class="card__element">   
-                    <h2 class="card__title">Vanoise National Park</h2>
-                    <button type="button" class="card__like-button"></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/lago_braies.jpg" alt="Lago di Braies">
-                <div class="card__element">   
-                    <h2 class="card__title">Lago di Braies</h2>
-                    <button type="button" class="card__like-button"></button>
-                </div>
-            </div>
+        </template>
         </section>
     </main>
 
@@ -79,7 +41,7 @@
         <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup_edit">
         <form action="#" class="popup__container" name="edit-profile-form">
             <h2 class="popup__title">Edit Profil</h2>
             <input 
@@ -93,7 +55,9 @@
             <button type="submit" class="popup__submit-button">Simpan</button>
             <button type="button" class="popup__close-button"></button>
         </form> 
+    </div>
 
+    <div class="popup popup_add">
         <form action="#" class="popup__container" name="new-place-form">
             <h2 class="popup__title">New Place</h2>
             <input
