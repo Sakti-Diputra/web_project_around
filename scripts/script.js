@@ -4,9 +4,9 @@ const addButton = document.querySelector('.profile__add-button');
 const closeButton = document.querySelector('.popup__close-button');
 const closeImageButton = document.querySelector('.popup__close-image');
 
-const popupEdit = document.querySelector('.popup__edit');
-const popupAdd = document.querySelector('.popup__add');
-const popupImages = document.querySelector('.popup__images');
+const popupEdit = document.querySelector('.popup-edit');
+const popupAdd = document.querySelector('.popup-add');
+const popupImages = document.querySelector('.popup-images');
 
 const profileName = document.querySelector('.profile__name');
 const profileAbout = document.querySelector('.profile__about');
