@@ -108,15 +108,25 @@ function renderTemplate(data) {
 
     const likeButton = cloneContent.querySelector('.card__like-button');
     likeButton.addEventListener('click', function() {
-      console.log(`like: ${placeName}`)
+      console.log(likeButton)
+      const statusBtn = likeButton.src.indexOf('Like_button.svg')
+      console.log(statusBtn)
+      
+      if (statusBtn > -1) { 
+        likeButton.src = './images/button_like-on.svg'
+      }
+
+      else {
+        likeButton.src = './images/Like_button.svg'
+      }
 
       // menambahkan fa-solid
-      const child = likeButton.children;
-      console.log(typeof(child), child)
+      //const child = likeButton.children;
+     // console.log(typeof(child), child)
 
-      const heart = child[0];
-      console.log(heart)
-      heart.classList.add('fa-solid')
+     // const heart = child[0];
+     // console.log(heart)
+     // heart.classList.add('fa-solid')
     });
 
     // -Append
@@ -159,7 +169,7 @@ addButton.addEventListener('click', function() {
 });
 
 // Menggunakan event delegation untuk menangani tombol "Tutup" pada semua popup
-document.addEventListener('click', (event) => {
+document.addEventListener('click', function (event) {
   if (event.target.classList.contains('popup__close-button')) {
       // Cari popup yang mengandung tombol "Tutup" yang ditekan
       const popup = event.target.closest('.popup');
@@ -171,6 +181,7 @@ document.addEventListener('click', (event) => {
 });
 
 saveAdd.addEventListener('submit', function (event) {
+  event.preventDefault()
   const title = inputTitle.value;
   const image = inputImage.value;
 
@@ -187,6 +198,8 @@ saveAdd.addEventListener('submit', function (event) {
   });
 
   renderTemplate(boxCards);
+  inputTitle.value = ''
+  inputImage.value = ''
 
   popupAdd.classList.toggle('popup_opened');
 });

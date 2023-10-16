@@ -62,10 +62,9 @@
 
 }
 
-.fa-heart {
-    width: 21px;
+.card__like-button {
     cursor: pointer;
-} 
+}
 
 .card__like-button:hover {
     opacity: 50%;  
