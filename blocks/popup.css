@@ -38,8 +38,8 @@
     position: absolute;
     background-size: cover;
     background-position: center;
-    top: -40px; 
-    right: -40px; 
+    top: -40px;
+    right: -40px;
     transition: color 0.3s;
 }
 
@@ -161,8 +161,8 @@ input {
     }
 
     .popup__input {
-        width: 238px; 
-        margin: 0 22px; 
+        width: 238px;
+        margin: 0 22px;
     }
 
     .popup__input_name {
