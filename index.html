@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Di Sekitar Amerika Serikat</title>
+    <link rel="stylesheet" href="./pages/normalize.css">
     <link rel="stylesheet" href="./pages/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 
 <body class="page">
@@ -29,10 +29,10 @@
             <template class="card__template">
             <div class="card">
                 <button type="button" class="card__delete-button"></button>
-                <img class="card__image">
+                <img class="card__image" alt="image">
                 <div class="card__element">   
                     <h2 class="card__title"></h2>
-                    <img class="card__like-button" src="./images/Like_button.svg">
+                    <img class="card__like-button" src="./images/Like_button.svg" alt="tombol suka dengan lambang hati">
                 </div>
             </div>
             </template>
@@ -43,6 +43,7 @@
         <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
     </footer>
 
+<!--Popup Edit-->
     <div class="popup popup-edit">
         <form action="#" class="popup__container" name="edit-profile-form">
             <h2 class="popup__title">Edit Profil</h2>
@@ -59,6 +60,7 @@
         </form> 
     </div>
 
+<!--Popup Add-->
     <div class="popup popup-add">
         <form action="#" class="popup__container" name="new-place-form">
             <h2 class="popup__title">New Place</h2>
@@ -74,16 +76,15 @@
             <button type="button" class="popup__close-button"></button>
         </form>
     </div>
-    
+
+ <!--Popup Image-->   
     <div class="popup popup-images">
         <div class="popup__content">
-            <img class="popup__image">
+            <img class="popup__image" alt="image card">
             <h2 class="popup__title-image"></h2>
             <button type="button" class="popup__close-image"></button>
         </div>
     </div>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./scripts/script.js"></script>
 </body>
