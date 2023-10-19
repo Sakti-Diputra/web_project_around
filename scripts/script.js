@@ -66,12 +66,17 @@ function createCard(data) {
   const likeButton = cardTemplateContent.querySelector('.card__like-button');
 
   cardImage.src = placeImage;
+  cardImage.alt = placeName;
+
   cardTitle.textContent = placeName;
 
-  cardImage.addEventListener('click', function() {
-    popupImages.classList.toggle('popup_opened');
+  cardImage.addEventListener('click', function() { 
     popupImage.src = placeImage;
+    popupImage.alt = placeName;
+
     popupTitleImage.textContent = placeName;
+
+    popupImages.classList.toggle('popup_opened');
   });
 
   deleteCard.addEventListener('click', function() {
@@ -135,7 +140,7 @@ saveAdd.addEventListener('submit', function (event) {
   const title = inputTitle.value;
   const image = inputImage.value;
 
-  boxCards.push({
+  boxCards.unshift({
     name: title,
     link: image
   });

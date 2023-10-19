@@ -1,3 +1,4 @@
+@import url(../pages/normalize.css);
 @import url(../vendor/Font/Inter\ Web/inter.css);
 @import url(../vendor/page.css);
 @import url(../blocks/header.css);
