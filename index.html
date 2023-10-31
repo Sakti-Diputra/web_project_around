@@ -1,90 +1,116 @@
 <!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Di Sekitar Amerika Serikat</title>
-    <link rel="stylesheet" href="./pages/index.css">
-</head>
-
-<body class="page">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Around The U.S.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
     <header class="header">
-        <img class="header__logo" src="./images/Header.png" alt="Header logo">
+      <img
+        src="./images/logo_header.svg"
+        alt="logo around the u.s."
+        class="header__logo"
+      />
     </header>
 
-    <main class="content">
-        <section class="profile">
-            <div class="profile__image"></div>
-            <div class="profile__info">
-                <h1 class="profile__name">Jacques Cousteau</h1>
-                <button type="button" class="profile__edit-button"></button>
-                <p class="profile__about">Penjelajah</p>
-            </div>
-            <button type="button" class="profile__add-button"></button>
-        </section>
+    <main id="main">
+      <section class="profile">
+        <img
+          src="./images/profile.jpg"
+          alt="profile Piture"
+          class="profile__image"
+        />
+        <div class="profile__info">
+          <h1 class="profile__name">Jacques Cousteau</h1>
+          <input type="button" class="profile__edit-button" />
+          <p class="profile__about">Penjelajah</p>
+        </div>
+        <input type="button" class="profile__add-button" />
+      </section>
 
-        <section class="elements">
-            <template class="card__template">
-            <div class="card">
-                <button type="button" class="card__delete-button"></button>
-                <img class="card__image">
-                <div class="card__element">   
-                    <h2 class="card__title"></h2>
-                    <img class="card__like-button" src="./images/Like_button.svg" alt="tombol suka dengan lambang hati">
-                </div>
-            </div>
-            </template>
-        </section>
+      <section id="popup">
+        <form class="popup popup_edit" novalidate>
+          <div class="popup__container">
+            <h2 class="popup__title">Edit profile</h2>
+            <input
+              type="text"
+              class="popup__input popup__input_name"
+              placeholder="Name"
+              minlength="2"
+              maxlength="40"
+              required
+              id="name-input"
+            />
+            <span class="popup__input-error name-input-error"></span>
+            <input
+              type="text"
+              class="popup__input popup__input_about"
+              placeholder="About me"
+              minlength="2"
+              maxlength="200"
+              required
+              id="aboutme-input"
+            />
+            <span class="popup__input-error aboutme-input-error"></span>
+            <button type="submit" class="popup__submit">Save</button>
+            <input type="button" class="popup__close" />
+          </div>
+        </form>
+        <form class="popup popup_add" novalidate>
+          <div class="popup__container">
+            <h2 class="popup__title">New Place</h2>
+            <input
+              type="text"
+              class="popup__input popup__input_title"
+              placeholder="Title"
+              minlength="2"
+              maxlength="30"
+              required
+              id="title-input"
+            />
+            <span class="popup__input-error title-input-error"></span>
+            <input
+              type="url"
+              class="popup__input popup__input_url"
+              placeholder="URL"
+              required
+              id="url-input"
+            />
+            <span class="popup__input-error url-input-error"></span>
+            <button type="submit" class="popup__submit">Save</button>
+            <input type="button" class="popup__close" />
+          </div>
+        </form>
+        <div class="popup popup_images">
+          <div class="popup__image-container">
+            <img class="popup__image" />
+            <button class="popup__close"></button>
+            <h2 class="popup__description"></h2>
+          </div>
+        </div>
+      </section>
+
+      <template id="template__cards">
+        <div class="cards__card">
+          <img class="card__image" />
+          <div class="card__menu">
+            <h2 class="card__title"></h2>
+            <div class="card__like-icon"></div>
+          </div>
+          <div class="card__delete"></div>
+        </div>
+      </template>
+
+      <section class="cards"></section>
     </main>
 
     <footer class="footer">
-        <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
+      <p class="footer__copyright">
+        &copy; 2021 Around The U.S.
+      </p>
     </footer>
-
-<!--Popup Edit-->
-    <div class="popup popup-edit">
-        <form action="#" class="popup__container" name="edit-profile-form">
-            <h2 class="popup__title">Edit Profil</h2>
-            <input 
-                type="text" 
-                class="popup__input popup__input_name" 
-                placeholder="Name">
-            <input 
-                type="text" 
-                class="popup__input popup__input_about-me" 
-                placeholder="About Me">
-            <button type="submit" class="popup__submit-button">Simpan</button>
-            <button type="button" class="popup__close-button"></button>
-        </form> 
-    </div>
-
-<!--Popup Add-->
-    <div class="popup popup-add">
-        <form action="#" class="popup__container" name="new-place-form">
-            <h2 class="popup__title">New Place</h2>
-            <input
-                type="text"
-                class="popup__input popup__input_title"
-                placeholder="Title">
-            <input
-                type="text"
-                class="popup__input popup__input_image-url"
-                placeholder="Image URL">
-            <button type="submit" class="popup__submit-button">Simpan</button>
-            <button type="button" class="popup__close-button"></button>
-        </form>
-    </div>
-
- <!--Popup Image-->   
-    <div class="popup popup-images">
-        <div class="popup__content">
-            <img class="popup__image">
-            <h2 class="popup__title-image"></h2>
-            <button type="button" class="popup__close-image"></button>
-        </div>
-    </div> 
-
-    <script src="./scripts/script.js"></script>
-</body>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
 </html>

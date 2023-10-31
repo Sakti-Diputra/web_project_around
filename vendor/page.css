@@ -1,11 +1,22 @@
-body {
-    background: #000000;
-    max-width: 1280px;
-    margin: auto;
-    font-family: 'Inter';
-}
-
-h1,h2,p {
-    color: #fff;
-    margin: 0;
-}
+.page {
+    max-width: 880px;
+    background-color: #000;
+    margin: 0 auto;
+    padding: 2.8rem 12.5rem 3.75rem;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .page {
+      width: 100%;
+      padding: 1.75rem 4rem 2.25rem;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .page {
+      width: 100%;
+      padding: 1.75rem 0 2.25rem;
+    }
+  }
+  
