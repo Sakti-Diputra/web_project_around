@@ -51,7 +51,9 @@ function handleCloseBtnPopup() {
     popupImage.classList.remove("popup_opened");
     inputTitle.value = "";
     inputUrl.value = "";
-    document.removeEventListener("keyup", closePopup);
+    document.removeEventListener("keyup", (evt) => {
+      if (evt.key === "Escape") closePopup();
+    });
   };
 
   closeBtn.forEach((item) => item.addEventListener("click", closePopup));
@@ -62,7 +64,9 @@ function handleCloseBtnPopup() {
       }
     });
   });
-  document.addEventListener("keyup", closePopup);
+  document.addEventListener("keyup", (evt) => {
+    if (evt.key === "Escape") closePopup();
+  });
 }
 
 function handleCardAdd(name, link) {
