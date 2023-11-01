@@ -61,9 +61,7 @@ function handleCloseBtnPopup() {
       }
     });
   });
-  document.addEventListener("keyup", (evt) => {
-    if (evt.key === "Escape") closePopup();
-  });
+  document.addEventListener("keyup", closePopup);
 }
 
 function handleCardAdd(name, link) {
