@@ -51,6 +51,7 @@ function handleCloseBtnPopup() {
     popupImage.classList.remove("popup_opened");
     inputTitle.value = "";
     inputUrl.value = "";
+    document.removeEventListener("keyup", closePopup);
   };
 
   closeBtn.forEach((item) => item.addEventListener("click", closePopup));
