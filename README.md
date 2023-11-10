@@ -1,13 +1,21 @@
-# Proyek 5: Halaman Profil "Di Sekitar Amerika Serikat"
+# Proyek 8: Halaman Profil "Di Sekitar Amerika Serikat"
 
 Ini adalah halaman profil "Di Sekitar Amerika Serikat" yang menampilkan informasi tentang penjelajah Jacques Cousteau. Halaman ini dibuat dengan menggunakan HTML, CSS, dan JavaScript. Proyek ini memiliki tampilan yang responsif untuk berbagai lebar layar.
+
+## Dibuat dengan
+- Semantic HTML
+- CSS Flexbox & Grid
+- Responsive Design
+- Document Object Model (DOM)
+- ECMAScript 6
+- Object Oriented Programming (OOP).
 
 ## Isi Proyek
 Proyek ini terdiri dari beberapa file utama:
 
 - 'index.html': Berkas HTML yang menggambarkan struktur halaman web.
 - 'pages/index.css': Berkas CSS yang mengatur tampilan halaman.
-- 'script/script.js': Berkas JavaScript yang mengendalikan interaksi dengan popup pengeditan profil dan cards.
+- 'script/index.js': Berkas JavaScript yang mengendalikan interaksi dengan popup pengeditan profil dan cards.
 - Direktori 'images': Berisi gambar-gambar yang digunakan dalam proyek ini, termasuk gambar header, gambar profil, dan gambar latar belakang kartu.
 
 ## Cara Penggunaan
